@@ -70,9 +70,10 @@ public class GoalService {
 
         return new GoalResponse(
                 goal.getGoalId(),
-                goal.getTitle(),
                 childResponse,
-                subjectResponse
-        );
+                subjectResponse,
+                goal.getTitle()
+
+                );
     }
 }
